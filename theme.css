@@ -1,0 +1,146 @@
+:root{
+  /* Light theme: classic academic structure, but with a distinct palette. */
+  --text:#111111;
+  --muted:#69717c;
+  --line:#dfe5eb;
+  --accent:#1769aa;
+  --surface:#ffffff;
+  --soft:#f5f8fb;
+  --nav-text:#000000;
+}
+
+body{color:var(--text);background:var(--surface)}
+.site-nav nav a{color:var(--nav-text)}
+.brand{color:#000000}
+.profile-column h1,
+.section-heading h2,
+.subsection-title,
+.research-item h3,
+.paper-item h3,
+.experience-item h3,
+#research .research-item h3,
+#papers .paper-item h3{color:#111111}
+.profile-role{color:#111111}
+.profile-meta,
+.item-meta,
+#research .item-meta,
+.subsection-note,
+.experience-item>span{color:var(--muted)}
+.about-copy p,
+.research-item p,
+.paper-item p,
+#research .research-item p{color:var(--text)}
+.experience-item p{color:#111111}
+.experience-item .role{color:#111111}
+#research .research-item,
+#research .research-item:last-child{border-color:#dfe5eb;background:#ffffff}
+#research .research-item,
+#research .research-item:last-child{border-left-color:var(--accent)}
+::selection{background:#dcecf9}
+
+.theme-toggle{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  width:30px;
+  height:30px;
+  margin-left:-4px;
+  padding:0;
+  border:1px solid #d2dae2;
+  border-radius:50%;
+  background:transparent;
+  color:#000000;
+  font-family:inherit;
+  font-size:17px;
+  line-height:1;
+  cursor:pointer;
+  transition:background-color .15s ease,border-color .15s ease,color .15s ease;
+}
+.theme-toggle:hover{
+  background:#f0f5f9;
+  border-color:#c1ccd6;
+  color:#000000;
+}
+.theme-toggle:focus-visible{
+  outline:2px solid var(--accent);
+  outline-offset:2px;
+}
+
+html[data-theme="dark"]{
+  color-scheme:dark;
+  --text:#eceff3;
+  --muted:#9eabb9;
+  --line:#26364a;
+  --accent:#79b8e8;
+  --surface:#0b0d10;
+  --soft:#101d2d;
+}
+html[data-theme="dark"] body{background:var(--surface);color:var(--text)}
+html[data-theme="dark"] .site-nav{
+  background:rgba(11,13,16,.97);
+  border-bottom-color:#202b38;
+  box-shadow:0 1px 8px rgba(0,0,0,.3);
+}
+html[data-theme="dark"] .brand,
+html[data-theme="dark"] .profile-column h1,
+html[data-theme="dark"] .section-heading h2,
+html[data-theme="dark"] .subsection-title,
+html[data-theme="dark"] .research-item h3,
+html[data-theme="dark"] .paper-item h3,
+html[data-theme="dark"] .experience-item h3,
+html[data-theme="dark"] #research .research-item h3,
+html[data-theme="dark"] #papers .paper-item h3{color:#f2f4f7}
+html[data-theme="dark"] .site-nav nav a{color:#f2f4f7}
+html[data-theme="dark"] .site-nav nav a:hover,
+html[data-theme="dark"] .brand:hover{color:var(--accent)}
+html[data-theme="dark"] .home-section{background:var(--surface);border-bottom-color:var(--line)}
+html[data-theme="dark"] .home-section:nth-of-type(even){background:var(--soft)}
+html[data-theme="dark"] .profile-role{color:#dfe4ea}
+html[data-theme="dark"] .profile-meta,
+html[data-theme="dark"] .item-meta,
+html[data-theme="dark"] #research .item-meta,
+html[data-theme="dark"] .subsection-note,
+html[data-theme="dark"] .experience-item>span{color:var(--muted)}
+html[data-theme="dark"] .about-copy,
+html[data-theme="dark"] .about-copy p{color:#e5e9ee}
+html[data-theme="dark"] .research-item p,
+html[data-theme="dark"] .paper-item p,
+html[data-theme="dark"] #research .research-item p{color:#dfe4ea}
+html[data-theme="dark"] #research .research-item,
+html[data-theme="dark"] #research .research-item:last-child{
+  background:var(--surface);
+  border-color:#29394d;
+  border-left-color:var(--accent);
+  box-shadow:0 1px 3px rgba(0,0,0,.3);
+}
+html[data-theme="dark"] .item-links a,
+html[data-theme="dark"] #research .item-links a{
+  background:transparent;
+  color:var(--accent);
+  border-color:transparent;
+}
+html[data-theme="dark"] .item-links a:hover,
+html[data-theme="dark"] #research .item-links a:hover{
+  background:transparent;
+  color:var(--accent);
+  text-decoration:underline;
+}
+html[data-theme="dark"] .experience-list,
+html[data-theme="dark"] .experience-item{border-color:var(--line)}
+html[data-theme="dark"] .experience-item p{color:#dce2e8}
+html[data-theme="dark"] .experience-item .role{color:#eef1f4}
+html[data-theme="dark"] footer{background:var(--surface);color:#929daa}
+html[data-theme="dark"] .theme-toggle{
+  color:#e8edf2;
+  border-color:#35465b;
+}
+html[data-theme="dark"] .theme-toggle:hover{
+  background:var(--soft);
+  border-color:#4b6078;
+  color:#ffffff;
+}
+html[data-theme="dark"] ::selection{background:#244b70}
+
+@media(max-width:820px){
+  .theme-toggle{margin-left:0}
+}

@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#ffffff">
+<script>
+(function(){
+  try {
+    var saved=localStorage.getItem("theme");
+    var theme=saved || ((window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches) ? "dark" : "light");
+    document.documentElement.setAttribute("data-theme",theme);
+  } catch(e) {}
+})();
+</script>
+<meta name="google-site-verification" content="Vh0WmdoBHm5IlY3-AqpC3eORB0TPVybyWHLvGStEsZc" />
+<title>Arnav Garg | Machine Learning &amp; Computational Science</title>
+<meta name="description" content="Arnav Garg works on machine learning and computational methods for scientific problems, including scientific machine learning and computational modeling.">
+<link rel="canonical" href="https://arnavgarg233.github.io/">
+<meta property="og:title" content="Arnav Garg | Machine Learning &amp; Computational Science">
+<meta property="og:description" content="Machine learning, scientific computing, and computational science research by Arnav Garg.">
+<meta property="og:type" content="profile">
+<meta property="og:url" content="https://arnavgarg233.github.io/">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfilePage",
+  "url": "https://arnavgarg233.github.io/",
+  "name": "Arnav Garg | Machine Learning & Computational Science",
+  "mainEntity": {
+    "@type": "Person",
+    "name": "Arnav Garg",
+    "alternateName": "arnavgarg233",
+    "url": "https://arnavgarg233.github.io/",
+    "sameAs": [
+      "https://github.com/arnavgarg233",
+      "https://orcid.org/0009-0001-1915-8655"
+    ],
+    "knowsAbout": [
+      "Machine learning",
+      "Scientific machine learning",
+      "Computational science"
+    ]
+  }
+}
+</script>
+<link rel="icon" href="data:,">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Serif:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css?v=20260823-2226">
+<link rel="stylesheet" href="theme.css?v=20260823-2247">
+<style>
+.item-links,#research .item-links{display:flex!important;align-items:baseline!important;gap:0!important;flex-wrap:wrap!important;margin-top:10px!important}
+.item-links a,#research .item-links a{display:inline!important;padding:0!important;border:0!important;border-radius:0!important;background:transparent!important;box-shadow:none!important;color:var(--accent)!important;font-size:13px!important;font-weight:500!important;line-height:1.4!important}
+.item-links a+a::before,#research .item-links a+a::before{content:"·";display:inline-block;margin:0 9px;color:var(--muted);text-decoration:none}
+.item-links a:hover,#research .item-links a:hover{background:transparent!important;color:var(--accent)!important;border:0!important;text-decoration:underline!important}
+.about-section{padding-bottom:12px!important}
+#research{padding-top:18px!important}
+@media(min-width:821px){.profile-column{transform:translateY(-5px)}}
+</style>
+</head>
+<body>
+<header class="site-nav">
+  <div class="container nav-inner">
+    <a class="brand" href="/" data-scroll-target="about">Arnav Garg</a>
+    <nav aria-label="Primary">
+      <a href="/" data-scroll-target="about">Home</a>
+      <a href="/" data-scroll-target="research">Research</a>
+      <a href="/" data-scroll-target="papers">Papers</a>
+      <a href="/" data-scroll-target="experience">Experience</a>
+      <a href="https://github.com/arnavgarg233" target="_blank" rel="noreferrer">GitHub</a>
+      <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to dark mode" title="Toggle dark mode"><span aria-hidden="true">☾</span></button>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="home-section about-section" id="about">
+  <div class="container section-grid about-grid">
+    <aside class="profile-column">
+      <h1>Arnav Garg</h1>
+      <p class="profile-role">Machine Learning<br>Computational Science</p>
+      <p class="profile-meta">Southern California</p>
+      <div class="profile-links">
+        <a href="mailto:arnavgarg888@gmail.com">Email</a>
+        <a href="https://github.com/arnavgarg233" target="_blank" rel="noreferrer">GitHub</a>
+        <a href="https://orcid.org/0009-0001-1915-8655" target="_blank" rel="noreferrer">ORCID</a>
+      </div>
+    </aside>
+
+    <div class="section-content about-copy">
+      <p>My work focuses on developing and applying machine learning and computational methods to scientific problems.</p>
+      <p>I’m also interested in language models and broader problems in modern machine learning.</p>
+      <p>Feel free to reach out if you’d like to discuss an interesting project or research idea.</p>
+    </div>
+  </div>
+</section>
+
+<section class="home-section" id="research">
+  <div class="container section-grid">
+    <header class="section-heading">
+      <h2>Selected Research</h2>
+    </header>
+
+    <div class="section-content">
+      <article class="research-item">
+        <div class="item-meta">2026 · Published · Machine learning · Earth Systems and Environment</div>
+        <h3>Seven-Day Landslide Forecasting</h3>
+        <p>Uses PCA-reduced InSAR histories and a random forest to forecast landslide instability seven days ahead, asking whether noisy satellite deformation can support short-horizon prediction rather than retrospective detection.</p>
+        <div class="item-links">
+          <a href="https://doi.org/10.1007/s41748-026-01227-y" target="_blank" rel="noreferrer">Paper</a>
+          <a href="https://github.com/arnavgarg233/7-day-landslide-forecasting" target="_blank" rel="noreferrer">Code</a>
+        </div>
+      </article>
+
+      <article class="research-item">
+        <div class="item-meta">Under review · Computational science</div>
+        <h3>Deterministic Butterfly Cone in Structural Glasses</h3>
+        <p>A localized kick in a structural glass spreads inside a sharply defined deterministic butterfly cone. Its speed changes little as structural relaxation slows dramatically, separating information spreading from glassy dynamics.</p>
+        <div class="item-links">
+          <a href="https://github.com/arnavgarg233/butterfly-cone-glass" target="_blank" rel="noreferrer">Code</a>
+        </div>
+      </article>
+
+      <article class="research-item">
+        <div class="item-meta">Under review · Machine learning</div>
+        <h3>Weak-Form Physics-Informed Learning</h3>
+        <p>Weak-form constraints transfer derivatives from noisy data to smooth test functions, stabilizing inverse parameter recovery in scientific imaging problems where pointwise physics-informed losses amplify noise.</p>
+        <div class="item-links">
+          <a href="https://github.com/arnavgarg233/WeakPINN" target="_blank" rel="noreferrer">Code</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="home-section" id="papers">
+  <div class="container section-grid">
+    <header class="section-heading">
+      <h2>Papers &amp; Projects</h2>
+    </header>
+
+    <div class="section-content">
+      <h3 class="subsection-title">Peer-reviewed</h3>
+
+      <article class="paper-item">
+        <div class="item-meta">Machine learning · Arnav Garg · 2026 · Earth Systems and Environment</div>
+        <h3>Seven-Day Landslide Forecasting from PCA-Derived InSAR Data with a Random Forest Classifier</h3>
+        <p>Combines PCA-reduced InSAR deformation histories with a random forest to forecast instability seven days ahead. The study asks whether satellite displacement signals can support short-horizon prediction, rather than only retrospective detection.</p>
+        <div class="item-links">
+          <a href="https://doi.org/10.1007/s41748-026-01227-y" target="_blank" rel="noreferrer">Paper</a>
+          <a href="https://github.com/arnavgarg233/7-day-landslide-forecasting" target="_blank" rel="noreferrer">Code</a>
+        </div>
+      </article>
+
+      <article class="paper-item">
+        <div class="item-meta">Machine learning · Arnav Garg, Aksh Garg, Dominique Duncan · 2025 · Electronics 14(13):2571</div>
+        <h3>2.5 CNN: Leveraging 2D CNNs to Pretrain 3D Models in Low-Data Regimes for COVID-19 Diagnosis</h3>
+        <p>Uses 2D CNN pretraining to give a 3D CT model a stronger starting point when labeled volumetric data are scarce. The method was developed for COVID-19 diagnosis, where full 3D training sets are relatively small.</p>
+        <div class="item-links">
+          <a href="https://doi.org/10.3390/electronics14132571" target="_blank" rel="noreferrer">Paper</a>
+          <a href="https://github.com/arnavgarg233/2.5CNN" target="_blank" rel="noreferrer">Code</a>
+        </div>
+      </article>
+
+      <h3 class="subsection-title current-title">Current projects</h3>
+      <p class="subsection-note">Papers currently under review.</p>
+
+      <article class="paper-item compact-item">
+        <div class="item-meta">Machine learning</div>
+        <h3>Weak-Form Physics-Informed Neural Networks for Noise-Robust Inverse Problems</h3>
+        <p>Weak-form constraints transfer derivatives from noisy data to smooth test functions, stabilizing inverse parameter recovery on scientific imaging problems where pointwise physics-informed losses amplify noise.</p>
+        <div class="item-links"><a href="https://github.com/arnavgarg233/WeakPINN" target="_blank" rel="noreferrer">Code</a></div>
+      </article>
+
+      <article class="paper-item compact-item">
+        <div class="item-meta">Machine learning</div>
+        <h3>Covert-Channel Forensics of Deceptive Language Models: When Internal-State Monitoring Adds Admissible Evidence</h3>
+        <p>Internal activations add evidence when deceptive or collusive information is hidden from the transcript. When visible behavior already reveals it, white-box probes add much less beyond the behavioral evidence.</p>
+        <div class="item-links"><a href="https://github.com/arnavgarg233/collusion-probe-audit" target="_blank" rel="noreferrer">Code</a></div>
+      </article>
+
+      <article class="paper-item compact-item">
+        <div class="item-meta">Computational science</div>
+        <h3>Modified-Equation-Informed Solution-Discrepancy Signatures Detect Hidden Stabilization Changes in Convective Heat-Transfer Solvers</h3>
+        <p>Small stabilization changes can leave heat-transfer outputs nearly unchanged even when the solver has changed. Modified-equation signatures reveal those hidden numerical changes directly from the computed solution fields.</p>
+        <div class="item-links"><a href="https://github.com/arnavgarg233/solver-forensics" target="_blank" rel="noreferrer">Code</a></div>
+      </article>
+
+      <article class="paper-item compact-item">
+        <div class="item-meta">Computational science</div>
+        <h3>Emergence of a Deterministic Butterfly Cone in Structural Glasses</h3>
+        <p>A localized perturbation spreads through a structural glass inside a deterministic butterfly cone. Its speed changes little as structural relaxation slows dramatically, separating information spreading from glassy dynamics.</p>
+        <div class="item-links"><a href="https://github.com/arnavgarg233/butterfly-cone-glass" target="_blank" rel="noreferrer">Code</a></div>
+      </article>
+
+      <article class="paper-item compact-item">
+        <div class="item-meta">Computational science</div>
+        <h3>Predicting and Relocating the Shear Band in a Two-Dimensional Model Glass</h3>
+        <p>The undeformed glass contains enough structural information to predict where its shear band will form. Softening a targeted region before loading can then move the eventual band to a different location.</p>
+        <div class="item-links"><a href="https://github.com/arnavgarg233/codimension-of-failure" target="_blank" rel="noreferrer">Code</a></div>
+      </article>
+
+      <article class="paper-item compact-item">
+        <div class="item-meta">Computational science</div>
+        <h3>A Single Confined Flux Loop Controls the Loschmidt Cusps of a Quenched (3+1)-Dimensional U(1) Lattice Gauge Theory</h3>
+        <p>After a lattice gauge theory quench, the sharp Loschmidt cusps are carried almost entirely by one confined flux-loop sector. Isolating that sector turns the return signal into a direct probe of its excitation energy.</p>
+        <div class="item-links"><a href="https://github.com/arnavgarg233/QuantDynam" target="_blank" rel="noreferrer">Code</a></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="home-section" id="experience">
+  <div class="container section-grid">
+    <header class="section-heading">
+      <h2>Experience</h2>
+    </header>
+
+    <div class="section-content experience-list">
+      <article class="experience-item">
+        <div>
+          <h3>Mercor</h3>
+          <p class="role">Machine Learning Intern</p>
+          <p>Built evaluations and benchmarks for frontier AI models.</p>
+        </div>
+        <span>2026</span>
+      </article>
+
+      <article class="experience-item">
+        <div>
+          <h3>Earth Systems and Environment</h3>
+          <p class="role">Peer Reviewer</p>
+          <p>Academic service · Springer Nature</p>
+        </div>
+        <span>2026</span>
+      </article>
+
+      <article class="experience-item">
+        <div>
+          <h3>University of Pennsylvania</h3>
+          <p class="role">Research Collaborator</p>
+          <p>Medical imaging and machine learning research.</p>
+        </div>
+        <span>2025–2026</span>
+      </article>
+
+      <article class="experience-item">
+        <div>
+          <h3>USC Stevens Neuroimaging and Informatics Institute</h3>
+          <p class="role">Researcher (Volunteer)</p>
+          <p>Data analysis and research.</p>
+        </div>
+        <span>2024–2025</span>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="home-section contact-section" id="contact">
+  <div class="container section-grid">
+    <header class="section-heading">
+      <h2>Contact</h2>
+    </header>
+    <div class="section-content contact-copy">
+      <p>Email: <a href="mailto:arnavgarg888@gmail.com">arnavgarg888@gmail.com</a></p>
+      <p><a href="https://github.com/arnavgarg233" target="_blank" rel="noreferrer">GitHub</a> · <a href="https://orcid.org/0009-0001-1915-8655" target="_blank" rel="noreferrer">ORCID</a></p>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="container footer-inner">
+    <span>© 2026 Arnav Garg</span>
+    <span>Machine Learning · Computational Science</span>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var root=document.documentElement;
+  var button=document.getElementById("theme-toggle");
+  var themeMeta=document.querySelector('meta[name="theme-color"]');
+
+  function syncThemeButton(){
+    var dark=root.getAttribute("data-theme")==="dark";
+    button.querySelector("span").textContent=dark ? "☀" : "☾";
+    button.setAttribute("aria-label",dark ? "Switch to light mode" : "Switch to dark mode");
+    button.setAttribute("title",dark ? "Switch to light mode" : "Switch to dark mode");
+    if(themeMeta) themeMeta.setAttribute("content",dark ? "#0b0d10" : "#ffffff");
+  }
+
+  syncThemeButton();
+
+  document.querySelectorAll("[data-scroll-target]").forEach(function(link){
+    link.addEventListener("click",function(event){
+      var target=document.getElementById(link.getAttribute("data-scroll-target"));
+      if(!target) return;
+      event.preventDefault();
+      target.scrollIntoView({behavior:"smooth",block:"start"});
+      if(window.history && window.history.replaceState){
+        window.history.replaceState(null,"",window.location.pathname + window.location.search);
+      }
+    });
+  });
+
+  if(window.location.hash){
+    var initialTarget=document.getElementById(window.location.hash.slice(1));
+    if(initialTarget){
+      window.requestAnimationFrame(function(){
+        initialTarget.scrollIntoView({block:"start"});
+        if(window.history && window.history.replaceState){
+          window.history.replaceState(null,"",window.location.pathname + window.location.search);
+        }
+      });
+    }
+  }
+
+  button.addEventListener("click",function(){
+    var next=root.getAttribute("data-theme")==="dark" ? "light" : "dark";
+    root.setAttribute("data-theme",next);
+    try { localStorage.setItem("theme",next); } catch(e) {}
+    syncThemeButton();
+  });
+})();
+</script>
+</body>
+</html>
