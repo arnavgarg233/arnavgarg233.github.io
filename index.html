@@ -126,7 +126,7 @@
       <article class="research-item">
         <div class="item-meta">Under review · Scientific machine learning</div>
         <h3>Composed Neural PDE Surrogates</h3>
-        <p>Shows why independently trained neural PDE operators fail when composed—and fixes it. Broadening each operator’s training states cuts composition error by up to 30×, with gains across pairs, resolutions, horizons, and architectures.</p>
+        <p>Neural PDE surrogates that work well alone can fail when composed because each operator encounters states outside its training distribution. Broadening those training states restores accurate composition across operator pairs and architectures.</p>
         <div class="item-links">
           <a href="https://github.com/arnavgarg233/composed-operator-surrogates" target="_blank" rel="noreferrer">Code</a>
         </div>
@@ -277,7 +277,6 @@
     <span>Machine Learning · Computational Science</span>
   </div>
 </footer>
-
 <script>
 (function(){
   var root=document.documentElement;
